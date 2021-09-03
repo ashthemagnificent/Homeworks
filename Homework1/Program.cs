@@ -6,23 +6,23 @@ namespace Homework1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bir sayı giriniz: ");
-            int sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Write a number: ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("İkinci bir sayı giriniz: ");
-            int sayi2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Write another number: ");
+            int num2 = Convert.ToInt32(Console.ReadLine());
 
-            //int toplam = (sayi1 * (sayi1 + 1)) / 2 - (sayi2 * (sayi2 + 1)) / 2;
+            //int sum = (num1 * (num1 + 1)) / 2 - (num2 * (num2 + 1)) / 2;
 
-            //int toplamm = Math.Abs(toplam);
-            int toplam = 0;
-            for (int i = sayi1; i <= sayi2; i++)
+            //int summ = Math.Abs(sum);
+            int sum = 0;
+            for (int i = num1; i <= num2; i++)
             {
-                toplam += sayi1 + i++;
+                sum += num1 + i++;
 
             }
             Console.Clear();
-            Console.WriteLine(toplam);
+            Console.WriteLine(sum);
             Console.ReadLine();
         }
     }
